@@ -1,0 +1,73 @@
+@import "tailwindcss";
+@import "@heroui/styles";
+
+@source inline("{bg,before:bg}-{zinc,slate,gray}-{50,100,200,300,400,500}");
+
+@font-face {
+  font-family: Averia;
+  src: url("/fonts/Averia.woff2");
+}
+
+@font-face {
+  font-family: Cactus;
+  src: url("/fonts/Cactus.woff2");
+  font-display: swap;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Manrope;
+  src: url("/fonts/Manrope.woff2");
+  font-display: swap;
+  font-weight: variable;
+  font-variant-ligatures: none;
+  font-feature-settings:
+    "liga" 0,
+    "clig" 0;
+}
+
+@theme {
+  --font-serif: Cactus, serif;
+  --font-display: Averia, serif;
+  --font-sans: Manrope, sans-serif;
+
+  --text-h-fluid: clamp(2.25rem, 0.9718rem + 2.2535vw, 3rem);
+  --text-h1-fluid: clamp(2.5rem, 2.1359rem + 1.5534vw, 4rem);
+}
+
+html {
+  scrollbar-gutter: stable;
+  scroll-behavior: smooth;
+}
+
+.pbl-heading {
+  @apply font-serif font-normal -tracking-[4%] text-h-fluid mb-6 leading-tight;
+}
+
+.pbl-heading-condensed {
+  @apply max-w-xl;
+}
+
+.pbl-title {
+  @apply font-bold text-xl leading-[140%] -tracking-[2%] mb-4 text-pretty;
+}
+
+.pbl-paragraph {
+  @apply text-xl text-stone-500 leading-[140%] mb-12 text-pretty;
+}
+
+.pbl-container {
+  @apply flex flex-col items-center;
+}
+
+.pbl-container-compact {
+  @apply max-w-196.5;
+}
+
+.pbl-button {
+  @apply font-bold p-6 rounded-full md:text-lg;
+}
+
+.pbl-bg {
+  @apply bg-zinc-50 rounded-4xl;
+}
