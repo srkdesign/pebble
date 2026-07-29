@@ -50,7 +50,7 @@ const Header = () => {
     >
       <div className="relative w-full flex flex-row! items-center! justify-between! py-4">
         <a className="max-w-36">
-          <img src="/logo/light.png" alt="" />
+          <img src={`${import.meta.env.BASE_URL}logo/light.png`} alt="" />
         </a>
         <nav className="hidden md:block absolute top-1/2 left-1/2 -translate-1/2">
           <ul className="flex items-baseline gap-16 text-stone-500">
