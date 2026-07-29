@@ -1,4 +1,4 @@
-import { Link, PrimaryButton, TertiaryButton } from "@components/index";
+import { Link, PrimaryButton } from "@components/index";
 import {
   APP_NAME,
   APP_PRIMARY,
